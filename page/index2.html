@@ -1,0 +1,111 @@
+<html>
+<head>
+   
+    <title>Styled Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #171717; 
+            color: white;
+        }
+
+        
+        .right {
+            width: 50%;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #ccc;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+
+       
+        .product-container {
+            display: flex;
+            gap: 60px;
+        }
+
+        .product {
+            background: #222;
+            padding: 0px;
+           height: 300;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            width: 200px;
+            text-align: left;
+            
+        }
+
+        .product img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            
+            margin-bottom: 10px;
+        }
+        .product p {
+            font-size: 14px;
+            color: white;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #27ae60;
+        }
+
+        
+        .left {
+            width: 50%;
+            background: url('c:/Users/DELL/Downloads/7.jpg') no-repeat center;
+            background-size: cover;
+            height: 100vh;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="left"></div>
+    <div class="right">
+        <h1>Learn About Us</h1>
+        <p>We have been operating for over 30 years and are Members of The Federation of Master Builders. We work on projects big and small from small residential extensions to full house and commercial builds and we are registered NHBC house builders.</p>
+
+        <div class="product-container">
+            <div class="product">
+                <img src="c:/Users/DELL/Downloads/6.jpg" alt="Light Shoes">
+                <p>Blooms</p>
+                <p class="price">£187.00</p>
+            </div>
+
+            <div class="product">
+                <img src="c:\Users\DELL\Downloads\5.jpg" alt="Beautiful Hat">
+                <p>Life</p>
+                <p class="price">£191.00</p>
+            </div>
+        </div>
+    </div>
+
+    
+
+</body>
+</html>
